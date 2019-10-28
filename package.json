@@ -1,0 +1,15 @@
+{
+  "name": "angular-connect-redelivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "kc serve -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@infosupport/kc-cli": "^3.2.1"
+  }
+}

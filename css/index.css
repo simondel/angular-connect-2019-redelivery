@@ -1,0 +1,23 @@
+.img-responsive-50 {
+    width: 50%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex .col {
+    flex: 1;
+}
+
+ul.no-list {
+    margin: 0;
+}
+
+.no-list li {
+    list-style-type: none;
+}
