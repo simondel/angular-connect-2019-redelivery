@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "schematics-demo": {
+      "description": "A blank schematic.",
+      "factory": "./schematics-demo/index#schematicsDemo",
+      "schema": "./schematics-demo/schema.json"
+    },
+    "catify": {
+      "description": "Modifies all HTML img tags into cats",
+      "factory": "./schematics-demo/index#catify"
+    }
+  }
+}

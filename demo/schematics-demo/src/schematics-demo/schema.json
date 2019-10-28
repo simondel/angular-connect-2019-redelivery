@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsDemo",
+  "title": "Schematics Demo Schema",
+  "type": "object",
+  "description": "Says hello",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of someone awesome",
+      "x-prompt": "Who do we want to greet?"
+    }
+  }
+}
