@@ -4,7 +4,7 @@
 
 #### Avoid
 ```css
-letter-spacing: $non-zeo-value;
+letter-spacing: $non-zero-value;
 ```
 
 #### Prefer
@@ -60,17 +60,19 @@ One listener per app insead of one per element
 ```html
 <div *ngFor="let item of items">
   <ng-container *ngTemplateOutlet="itemTemplate" />
-  <ng-template #itemTemplate>Hello world!</ng-template>
+  <ng-template #itemTemplate>Hello {{item}}!</ng-template>
 </div>
 ```
 
 #### Prefer
 ```html
 <div *ngFor="let item of items">
-  <ng-container *ngTemplateOutlet="itemTemplate" />
+  <ng-container *ngTemplateOutlet="itemTemplate; context: {item: item}" />
 </div>
 
-<ng-template #itemTemplate>Hello world!</ng-template>
+<ng-template #itemTemplate let-item="item">
+    Hello {{item}}!
+</ng-template>
 ```
 
 #### Why?
@@ -80,7 +82,7 @@ One ng-template per component!
 
 #### Avoid
 ```html
-<div [ngStyle]="{color: red}">
+<div [ngStyle]="{color: 'red'}">
   Div content
 </div>
 ```
